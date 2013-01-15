@@ -1,0 +1,114 @@
+#heading a {
+  font-size: 1.75em;
+  font-family: 'Oswald', sans-serif;
+  text-shadow: 2px 1px 1px #555;
+}
+
+a {
+  text-decoration: none;
+  color: #B3C3C7;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #B3C3C7;
+}
+
+span.alt-text {
+  color: #EBCCA2;
+}
+
+a.navlink {
+  text-decoration: none;
+  color: #B3C3C7;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+  -webkit-transition: color .1s ease-in;  
+  -moz-transition: color .1s ease-in;  
+  -o-transition: color .1s ease-in;  
+  transition: color .1s ease-in;
+  text-shadow: 2px 1px 1px #555;  
+}
+
+a:hover.navlink {
+  text-decoration: none;
+  color: #EBCCA2;
+  font-size: 2em;
+  font-family: 'Oswald', sans-serif;
+}
+
+div#content-wrapper {
+  max-width: 768px;
+  width: 92%;
+  margin: 0 auto;
+}
+
+div#content-mainbox {
+  border: 1em #dddddd solid;
+  border-radius: 1em;
+  padding: 1em;
+  background-image: url("../images/bikegravel.jpg");
+}
+
+div#footer {
+  margin: 10px auto;
+  text-align: center;
+  max-width: 960px;
+  width: 95%;
+  color: #B3C3C7;
+  font-size: .7em;
+  font-family: 'Droid Serif', serif;
+}
+
+div#main-content {
+}
+
+h1 {
+  margin: 0px;
+}
+
+body {
+  background-color: #80697F;
+}
+
+h1#heading {
+
+}
+
+div#main-text-box {
+  background-color: #dddddd;
+  width: 335px;
+  height: 24em;
+  float: right;
+  padding: 1em;
+  zoom: 1;
+  filter: alpha(opacity=95);
+  opacity: 0.95;
+  font-family: 'Droid Serif', serif;
+  line-height: 1.75em;
+  color: #444;
+}
+
+div#content-title {
+  color: #80697F;
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.7em;
+  margin-bottom: 0.75em;
+  text-shadow: 1px 1px 1px #999;  
+}
+
+::selection {
+  background:#FF99CC;
+  color: #FFF;
+}
+
+
+::-moz-selection {
+  background:#FF99CC;
+  color: #FFF;
+}
+
+::-webkit-selection {
+  background:#FF99CC;
+  color: #FFF;
+}
