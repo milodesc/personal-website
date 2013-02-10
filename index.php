@@ -23,7 +23,7 @@
 
     <div id="content-wrapper">
 
-      <h1 id="heading"><a href="http://patrickcjensen.com">patrick<span class="alt-text">c</span>jensen<span class="alt-text">.com</span></a></h1>
+      <h1 id="heading"><a href="/">patrick<span class="alt-text">c</span>jensen<span class="alt-text">.com</span></a></h1>
 
       <div id="content-mainbox">
 
