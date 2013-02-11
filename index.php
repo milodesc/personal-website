@@ -4,6 +4,7 @@
   <head>
 
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>patrickcjensen.com</title>
 
@@ -17,6 +18,8 @@
   </head>
 
   <body>
+      
+    <div class="menuButton">Menu</div>
 
     <div id="content-wrapper">
 
@@ -57,13 +60,20 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
 
 <script>
 $(document).ready(function() {
-   $(".navigation a").click(function() {
-      $(".navigation a").css("color", "#B3C3C7");
-      $(this).css("color", "#EBCCA2");
-      $("#content-body").hide().load($(this).attr("href")).fadeIn("slow");
-      $("#content-title").hide().html($(this).html()).fadeIn("slow");
-      return false;
-   });
+
+  $(".menuButton").show();
+  $(".navigation").hide();
+  $(".menuButton").click(function() {
+    $(".navigation").slideToggle();
+  });
+
+  $(".navigation a.navlink").click(function() {
+    $(".navigation a.navlink").css("color", "#B3C3C7");
+    $(this).css("color", "#EBCCA2");
+    $("#content-body").hide().load($(this).attr("href")).fadeIn("slow");
+    $("#content-title").hide().html($(this).html()).fadeIn("slow");
+    return false;
+  });
 });
 </script>
 

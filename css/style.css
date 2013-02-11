@@ -29,7 +29,7 @@ div#content-wrapper {
 }
 
 div#content-mainbox {
-  border: 1em #dddddd solid;
+  /*border: 1em #dddddd solid;*/
   border-radius: 1em;
   padding: 1em;
   background-image: url("../images/bikegravel.jpg");
@@ -57,11 +57,12 @@ div#main-text-box {
   background-color: #dddddd;
   padding: 1em;
   zoom: 1;
-  filter: alpha(opacity=95);
-  opacity: 0.95;
+  filter: alpha(opacity=90);
+  opacity: 0.90;
   font-family: 'Droid Serif', serif;
   line-height: 1.75em;
   color: #444;
+  border-radius: 1em;
 }
 
 div#content-title {
@@ -97,7 +98,7 @@ div#content-title {
 a.navlink {
   text-decoration: none;
   color: #B3C3C7;
-  font-size: 1.5em;
+  font-size: 1.4em;
   font-family: 'Oswald', sans-serif;
   -webkit-transition: color .1s ease-in;  
   -moz-transition: color .1s ease-in;  
@@ -106,4 +107,18 @@ a.navlink {
   text-shadow: 2px 1px 1px #555;  
   border-bottom: 1px solid gray;
   display: block;
+}
+
+.menuButton {
+  display: none;
+  font-size: 1.3em;
+  font-family: 'Oswald', sans-serif;
+  border-bottom: 1px #999 solid;
+  display: block;
+  color: #444;
+  text-align: right;
+  padding-right: 10px;
+  background-color: grey;
+  text-shadow: 1px 1px 1px #B3C3C7;
+  cursor:pointer;
 }
