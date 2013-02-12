@@ -89,7 +89,7 @@ div#content-title {
   color: #FFF;
 }
 
-.navigation ul {
+.navigation1 ul {
   list-style: none outside none;
   padding: 0;
   margin: 0;
@@ -120,5 +120,24 @@ a.navlink {
   padding-right: 10px;
   background-color: grey;
   text-shadow: 1px 1px 1px #B3C3C7;
-  cursor:pointer;
 }
+
+.blockClass {
+  display: block;
+}
+
+.hideClass {
+  height: 0px;
+  opacity: 0;
+}
+
+.navigation1Appear {
+  display: none;
+}
+
+@media all and (min-width: 650px) {
+  .menuButton, .navigation1 {
+    display: none;
+  }
+}
+

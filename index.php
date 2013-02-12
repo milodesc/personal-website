@@ -14,6 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 
   </head>
 
@@ -23,7 +24,7 @@
 
     <div id="content-wrapper">
 
-      <div class="navigation">
+      <div class="navigation1">
           <ul>
               <li><a href="content/about.php" class="navlink">About</a></li>
               <li><a href="content/work.php" class="navlink">Work</a></li>
@@ -61,19 +62,31 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
 <script>
 $(document).ready(function() {
 
-  $(".menuButton").show();
-  $(".navigation").hide();
+  //Change cursor to pointer when js is available because without js, the menu bar doesn't link to anything.
+  $(".menuButton").css("cursor", "pointer");
+
+  //Hide navigation when js is available to save some space.
+  $(".navigation1").addClass("hideClass");
+
+  //Drop down when menu is clicked.
   $(".menuButton").click(function() {
-    $(".navigation").slideToggle();
+    $(".navigation1").toggleClass("hideClass", 500, "easeOutSine");
+    /*
+    $(".navigation1").animate({
+        height: "toggle", opacity: "toggle"
+      }, "slow");
+    */
   });
 
-  $(".navigation a.navlink").click(function() {
-    $(".navigation a.navlink").css("color", "#B3C3C7");
+  //Load new content when a menu link is clicked.
+  $(".navigation1 a.navlink").click(function() {
+    $(".navigation1 a.navlink").css("color", "#B3C3C7");
     $(this).css("color", "#EBCCA2");
     $("#content-body").hide().load($(this).attr("href")).fadeIn("slow");
     $("#content-title").hide().html($(this).html()).fadeIn("slow");
     return false;
   });
+
 });
 </script>
 
