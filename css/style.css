@@ -122,22 +122,19 @@ a.navlink {
   text-shadow: 1px 1px 1px #B3C3C7;
 }
 
-.blockClass {
-  display: block;
-}
-
 .hideClass {
   height: 0px;
   opacity: 0;
-}
-
-.navigation1Appear {
-  display: none;
 }
 
 @media all and (min-width: 650px) {
   .menuButton, .navigation1 {
     display: none;
   }
+  #main-content {
+    width: 65%;
+  }
 }
 
+@media all and (min-width: 750px) {
+}
