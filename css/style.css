@@ -131,10 +131,19 @@ a.navlink {
   .menuButton, .navigation1 {
     display: none;
   }
-  #main-content {
-    width: 65%;
-  }
-}
 
-@media all and (min-width: 750px) {
+  #main-content {
+    width: 75%;
+  }
+
+  div#content-title {
+    font-size: 4em;
+    text-shadow: 2.5px 2.5px 2.75px #666;
+    margin-bottom: .5em;
+    margin-top: -.17em;
+  }
+
+  #heading a {
+    font-size: 2em;
+  }
 }
