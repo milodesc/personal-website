@@ -57,7 +57,7 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
 
 </div>
 
-<div id="footer" >Copyright 2011-<?php echo date (Y); ?></div>
+<div id="footer">Copyright 2011-<?php echo date ("Y"); ?></div>
 
 <script>
 $(document).ready(function() {
