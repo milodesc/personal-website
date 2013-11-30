@@ -1,3 +1,7 @@
+* { 
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
 #heading a {
   font-size: 1.137em;
   font-family: 'Oswald', sans-serif;
@@ -57,8 +61,7 @@ div#main-text-box {
   background-color: #dddddd;
   padding: 1em;
   zoom: 1;
-  filter: alpha(opacity=90);
-  opacity: 0.90;
+  background-color: rgba(255,255,255,0.85);
   font-family: 'Droid Serif', serif;
   line-height: 1.75em;
   color: #444;
@@ -90,9 +93,16 @@ div#content-title {
 }
 
 .navigation1 ul {
-  list-style: none outside none;
   padding: 0;
   margin: 0;
+}
+
+#navigation2 {
+  display: none;
+}
+
+.navigation ul {
+  list-style-type: none;
 }
 
 a.navlink {
@@ -107,6 +117,7 @@ a.navlink {
   text-shadow: 2px 1px 1px #555;  
   border-bottom: 1px solid gray;
   display: block;
+  padding-right: 0em;
 }
 
 .menuButton {
@@ -127,13 +138,25 @@ a.navlink {
   opacity: 0;
 }
 
+.clear {
+  overflow: hidden;
+  width: 100%;
+}
+
 @media all and (min-width: 650px) {
+
+  div#main-text-box {
+    float: left;
+    width: 100%;
+  }
+
   .menuButton, .navigation1 {
     display: none;
   }
 
   #main-content {
-    width: 75%;
+    width: 80%;
+    margin-right: .5em;
   }
 
   div#content-title {
@@ -145,5 +168,30 @@ a.navlink {
 
   #heading a {
     font-size: 2em;
+  }
+
+  #navigation2 {
+    display: block;
+    float: left;
+    width: 20%;
+  }
+
+  #navigation2 ul {
+    padding-left: 0em;
+  }
+
+  #navigation2 ul li {
+    padding-left: .75em;
+    padding-right: .75em;
+    background-color: #80697F;
+    border-bottom: 1px solid #999;
+  }
+
+  #navigation2 ul li:last-child {
+    border-bottom: none;
+  }
+
+  a.navlink {
+    border-bottom: none;
   }
 }

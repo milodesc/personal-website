@@ -24,21 +24,13 @@
 
     <div id="content-wrapper">
 
-      <div class="navigation1">
-          <ul>
-              <li><a href="content/about.php" class="navlink">About</a></li>
-              <li><a href="content/work.php" class="navlink">Work</a></li>
-              <li><a href="content/blog.php" class="navlink">Blog</a></li>
-              <li><a href="content/connect.php" class="navlink">Connect</a></li>
-          </ul>
+      <div class="navigation1 navigation">
+        <?php include("navigation.php"); ?>
       </div>
 
       <h1 id="heading"><a href="/">patrick<span class="alt-text">c</span>jensen<span class="alt-text">.com</span></a></h1>
 
-      <div id="content-mainbox">
-
-<!-- header ends -->
-
+<div id="content-mainbox" class="clear">
   <div id="main-content">
     <div id="main-text-box">
       <div id="content-title">About</div>
@@ -50,45 +42,38 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
 
     </div>
   </div>
-
-<!-- footer begins -->
-
+  <div id="navigation2" class="navigation"><?php include("navigation.php"); ?></div>
 </div>
 
-</div>
+  </div>
 
-<div id="footer">Copyright 2011-<?php echo date ("Y"); ?></div>
+  <div id="footer" >Copyright 2011-<?php echo date (Y); ?></div>
 
-<script>
-$(document).ready(function() {
+  <script>
+  $(document).ready(function() {
 
-  //Change cursor to pointer when js is available because without js, the menu bar doesn't link to anything.
-  $(".menuButton").css("cursor", "pointer");
+    //Change cursor to pointer when js is available because without js, the menu bar doesn't link to anything.
+    $(".menuButton").css("cursor", "pointer");
 
-  //Hide navigation when js is available to save some space.
-  $(".navigation1").addClass("hideClass");
+    //Hide navigation when js is available to save some space.
+    $(".navigation1").addClass("hideClass");
 
-  //Drop down when menu is clicked.
-  $(".menuButton").click(function() {
-    $(".navigation1").toggleClass("hideClass", 500, "easeOutSine");
-    /*
-    $(".navigation1").animate({
-        height: "toggle", opacity: "toggle"
-      }, "slow");
-    */
+    //Drop down when menu is clicked.
+    $(".menuButton").click(function() {
+      $(".navigation1").toggleClass("hideClass", 500, "easeOutSine");
+    });
+
+    //Load new content when a menu link is clicked.
+    $(".navigation a.navlink").click(function() {
+      $(".navigation a.navlink").css("color", "#B3C3C7");
+      $(this).css("color", "#EBCCA2");
+      $("#content-body").hide().load($(this).attr("href")).fadeIn("slow");
+      $("#content-title").hide().html($(this).html()).fadeIn("slow");
+      return false;
+    });
+
   });
-
-  //Load new content when a menu link is clicked.
-  $(".navigation1 a.navlink").click(function() {
-    $(".navigation1 a.navlink").css("color", "#B3C3C7");
-    $(this).css("color", "#EBCCA2");
-    $("#content-body").hide().load($(this).attr("href")).fadeIn("slow");
-    $("#content-title").hide().html($(this).html()).fadeIn("slow");
-    return false;
-  });
-
-});
-</script>
+  </script>
 
 </body>
 
