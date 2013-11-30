@@ -39,7 +39,7 @@ div#content-mainbox {
   background-image: url("../images/bikegravel.jpg");
 }
 
-div#footer {
+footer {
   margin: 10px auto;
   text-align: center;
   max-width: 960px;
@@ -68,7 +68,7 @@ div#main-text-box {
   border-radius: 1em;
 }
 
-div#content-title {
+h2 {
   color: #80697F;
   font-family: 'Oswald', sans-serif;
   font-size: 1.7em;
@@ -159,7 +159,7 @@ a.navlink {
     margin-right: .5em;
   }
 
-  div#content-title {
+  h2 {
     font-size: 4em;
     text-shadow: 2.5px 2.5px 2.75px #666;
     margin-bottom: .5em;

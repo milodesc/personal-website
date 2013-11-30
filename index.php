@@ -13,6 +13,9 @@
     <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
 
@@ -24,16 +27,16 @@
 
     <div id="content-wrapper">
 
-      <div class="navigation1 navigation">
+      <nav class="navigation1 navigation">
         <?php include("navigation.php"); ?>
-      </div>
+      </nav>
 
       <h1 id="heading"><a href="/">patrick<span class="alt-text">c</span>jensen<span class="alt-text">.com</span></a></h1>
 
 <div id="content-mainbox" class="clear">
   <div id="main-content">
     <div id="main-text-box">
-      <div id="content-title">About</div>
+      <h2 id="content-title">About</h2>
 
         <div id="content-body">A certain top-hatted president once said: "I like to see a man proud of the place in which he lives. I like to see a man live so that his place will be proud of him."<br /><br />
 
@@ -42,12 +45,12 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
 
     </div>
   </div>
-  <div id="navigation2" class="navigation"><?php include("navigation.php"); ?></div>
+  <nav id="navigation2" class="navigation"><?php include("navigation.php"); ?></nav>
 </div>
 
   </div>
 
-  <div id="footer" >Copyright 2011-<?php echo date (Y); ?></div>
+  <footer>Copyright 2011-<?php echo date (Y); ?></footer>
 
   <script>
   $(document).ready(function() {
@@ -78,5 +81,3 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
 </body>
 
 </html>
-
-
