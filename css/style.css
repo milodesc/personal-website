@@ -110,10 +110,10 @@ a.navlink {
   color: #B3C3C7;
   font-size: 1.4em;
   font-family: 'Oswald', sans-serif;
-  -webkit-transition: color .1s ease-in;  
-  -moz-transition: color .1s ease-in;  
-  -o-transition: color .1s ease-in;  
-  transition: color .1s ease-in;
+  -webkit-transition: color .2s ease-in;  
+  -moz-transition: color .2s ease-in;  
+  -o-transition: color .2s ease-in;  
+  transition: color .2s ease-in;
   text-shadow: 2px 1px 1px #555;  
   border-bottom: 1px solid gray;
   display: block;
@@ -185,6 +185,15 @@ a.navlink {
     padding-right: .75em;
     background-color: #80697F;
     border-bottom: 1px solid #999;
+    -webkit-transition: padding-left .2s ease 0s;
+    -moz-transition: padding-left .2s ease 0s;
+    -o-transition: padding-left .2s ease 0s;
+    -ms-transition: padding-left .2s ease 0s;
+    transition: padding-left .2s ease 0s;
+  }
+
+  #navigation2 ul li:hover {
+    padding-left: 1.25em;
   }
 
   #navigation2 ul li:last-child {
