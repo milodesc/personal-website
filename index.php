@@ -67,10 +67,10 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
     });
 
     //Load new content when a menu link is clicked.
-    $(".navigation a.navlink").click(function() {
-      $(".navigation a.navlink").css("color", "#B3C3C7");
+    $(".navigation a.navlink li").click(function() {
+      $(".navigation a.navlink li").css("color", "#B3C3C7");
       $(this).css("color", "#EBCCA2");
-      $("#content-body").hide().load($(this).attr("href")).fadeIn("slow");
+      $("#content-body").hide().load($(this).parent().attr("href")).fadeIn("slow");
       $("#content-title").hide().html($(this).html()).fadeIn("slow");
       return false;
     });

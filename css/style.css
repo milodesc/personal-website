@@ -2,6 +2,10 @@
   -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
+#content-body {
+  min-height: 85px;
+}
+
 #heading a {
   font-size: 1.137em;
   font-family: 'Oswald', sans-serif;
@@ -33,7 +37,6 @@ div#content-wrapper {
 }
 
 div#content-mainbox {
-  /*border: 1em #dddddd solid;*/
   border-radius: 1em;
   padding: 1em;
   background-image: url("../images/bikegravel.jpg");
@@ -115,7 +118,7 @@ a.navlink {
   -o-transition: color .2s ease-in;  
   transition: color .2s ease-in;
   text-shadow: 2px 1px 1px #555;  
-  border-bottom: 1px solid gray;
+  border-top: 1px solid gray;
   display: block;
   padding-right: 0em;
 }
@@ -181,10 +184,9 @@ a.navlink {
   }
 
   #navigation2 ul li {
-    padding-left: .75em;
+    padding-left: .5em;
     padding-right: .75em;
     background-color: #80697F;
-    border-bottom: 1px solid #999;
     -webkit-transition: padding-left .2s ease 0s;
     -moz-transition: padding-left .2s ease 0s;
     -o-transition: padding-left .2s ease 0s;
@@ -193,14 +195,14 @@ a.navlink {
   }
 
   #navigation2 ul li:hover {
-    padding-left: 1.25em;
+    padding-left: 1em;
   }
 
-  #navigation2 ul li:last-child {
-    border-bottom: none;
+  #navigation2 ul a:first-child {
+    border-top: none;
   }
 
   a.navlink {
-    border-bottom: none;
+    border-top: 1px solid #999;
   }
 }
