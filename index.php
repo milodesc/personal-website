@@ -33,63 +33,62 @@
 
       <h1 id="heading"><a href="/">patrick<span class="alt-text">c</span>jensen<span class="alt-text">.com</span></a></h1>
 
-<div id="content-mainbox" class="clear">
-  <div id="main-content">
-    <div id="main-text-box">
-      <h2 id="content-title">About</h2>
+      <div id="content-mainbox" class="clear">
+        <div id="main-content">
+          <div id="main-text-box">
+            <h2 id="content-title">About</h2>
 
-        <div id="content-body">A certain top-hatted president once said: "I like to see a man proud of the place in which he lives. I like to see a man live so that his place will be proud of him."<br /><br />
+            <div id="content-body">
+              <?php include("content/about.php"); ?>
+            </div>
 
-I aim to be the type of person Lincoln would like to see. By advocating for effective city planning, sustainable transportation, and the appropriate use of technology, I believe I can help shape places into something I am proud of while gaining the pride of the places I shape.
+          </div>
         </div>
+        <nav id="rightNav" class="navigation"><?php include("navigation.php"); ?></nav>
+      </div>
 
     </div>
-  </div>
-  <nav id="rightNav" class="navigation"><?php include("navigation.php"); ?></nav>
-</div>
 
-  </div>
+    <footer>Copyright 2011-<?php echo date (Y); ?></footer>
 
-  <footer>Copyright 2011-<?php echo date (Y); ?></footer>
+    <script>
+      $(document).ready(function() {
 
-  <script>
-  $(document).ready(function() {
+        var menuButton = $(".menuButton"),
+          topNav = $("#topNav"),
+          navigationBars = $(".navigation li"),
+          contentBody = $("#content-body"),
+          contentTitle = $("#content-title");
 
-    var menuButton = $(".menuButton"),
-      topNav = $("#topNav"),
-      navigationBars = $(".navigation li"),
-      contentBody = $("#content-body"),
-      contentTitle = $("#content-title");
+        //Change cursor to pointer when js is available because without js, the menu bar doesn't link to anything.
+        menuButton.css("cursor", "pointer");
 
-    //Change cursor to pointer when js is available because without js, the menu bar doesn't link to anything.
-    menuButton.css("cursor", "pointer");
+        //Hide navigation when js is available to save some space.
+        topNav.addClass("hideClass");
 
-    //Hide navigation when js is available to save some space.
-    topNav.addClass("hideClass");
+        //Drop down when menu is clicked.
+        menuButton.click(function() {
+          topNav.toggleClass("hideClass", 500, "easeOutSine");
+        });
 
-    //Drop down when menu is clicked.
-    menuButton.click(function() {
-      topNav.toggleClass("hideClass", 500, "easeOutSine");
-    });
+        //Load new content when a menu link is clicked.
+        navigationBars.click(function() {
+          navigationBars.addClass("inactiveNav").removeClass("activeNav");
+          
+          //Give the nav item that was clicked on some special styling in both navs
+          var selectedNavItemName = this.innerHTML;
+          navigationBars.filter(function(){
+            return this.innerHTML == selectedNavItemName;
+          }).addClass("activeNav").removeClass("inactiveNav");
 
-    //Load new content when a menu link is clicked.
-    navigationBars.click(function() {
-      navigationBars.addClass("inactiveNav").removeClass("activeNav");
-      
-      //Give the nav item that was clicked on some special styling in both navs
-      var selectedNavItemName = this.innerHTML;
-      navigationBars.filter(function(){
-        return this.innerHTML == selectedNavItemName;
-      }).addClass("activeNav").removeClass("inactiveNav");
+          contentBody.hide().load($(this).parent().attr("href")).fadeIn("slow");
+          contentTitle.hide().html($(this).html()).fadeIn("slow");
+          return false;
+        });
 
-      contentBody.hide().load($(this).parent().attr("href")).fadeIn("slow");
-      contentTitle.hide().html($(this).html()).fadeIn("slow");
-      return false;
-    });
+      });
+    </script>
 
-  });
-  </script>
-
-</body>
+  </body>
 
 </html>
