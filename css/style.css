@@ -183,7 +183,7 @@ h2 {
   }
 
   #main-content {
-    width: 80%;
+    width: 85%;
     margin-right: .5em;
   }
 
@@ -201,7 +201,7 @@ h2 {
   #rightNav {
     display: block;
     float: left;
-    width: 20%;
+    width: 15%;
   }
 
   #rightNav ul {
