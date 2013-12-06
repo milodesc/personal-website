@@ -27,7 +27,7 @@
 
     <div id="content-wrapper">
 
-      <nav class="navigation1 navigation">
+      <nav id="topNav" class="navigation">
         <?php include("navigation.php"); ?>
       </nav>
 
@@ -45,7 +45,7 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
 
     </div>
   </div>
-  <nav id="navigation2" class="navigation"><?php include("navigation.php"); ?></nav>
+  <nav id="rightNav" class="navigation"><?php include("navigation.php"); ?></nav>
 </div>
 
   </div>
@@ -55,23 +55,35 @@ I aim to be the type of person Lincoln would like to see. By advocating for effe
   <script>
   $(document).ready(function() {
 
+    var menuButton = $(".menuButton"),
+      topNav = $("#topNav"),
+      navigationBars = $(".navigation li"),
+      contentBody = $("#content-body"),
+      contentTitle = $("#content-title");
+
     //Change cursor to pointer when js is available because without js, the menu bar doesn't link to anything.
-    $(".menuButton").css("cursor", "pointer");
+    menuButton.css("cursor", "pointer");
 
     //Hide navigation when js is available to save some space.
-    $(".navigation1").addClass("hideClass");
+    topNav.addClass("hideClass");
 
     //Drop down when menu is clicked.
-    $(".menuButton").click(function() {
-      $(".navigation1").toggleClass("hideClass", 500, "easeOutSine");
+    menuButton.click(function() {
+      topNav.toggleClass("hideClass", 500, "easeOutSine");
     });
 
     //Load new content when a menu link is clicked.
-    $(".navigation a.navlink li").click(function() {
-      $(".navigation a.navlink li").css("color", "#B3C3C7");
-      $(this).css("color", "#EBCCA2");
-      $("#content-body").hide().load($(this).parent().attr("href")).fadeIn("slow");
-      $("#content-title").hide().html($(this).html()).fadeIn("slow");
+    navigationBars.click(function() {
+      navigationBars.addClass("inactiveNav").removeClass("activeNav");
+      
+      //Give the nav item that was clicked on some special styling in both navs
+      var selectedNavItemName = this.innerHTML;
+      navigationBars.filter(function(){
+        return this.innerHTML == selectedNavItemName;
+      }).addClass("activeNav").removeClass("inactiveNav");
+
+      contentBody.hide().load($(this).parent().attr("href")).fadeIn("slow");
+      contentTitle.hide().html($(this).html()).fadeIn("slow");
       return false;
     });
 
