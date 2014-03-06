@@ -12,7 +12,7 @@ a:focus {
 #heading a {
   font-size: 1.137em;
   font-family: "Oswald", helvetica, arial, sans-serif;
-  text-shadow: 2px 1px 1px #555; }
+  text-shadow: 2px 1px 1px #555555; }
 
 a {
   text-decoration: none;
@@ -67,17 +67,9 @@ h2 {
   margin-bottom: 0.75em;
   text-shadow: 1px 1px 1px #999; }
 
-::selection {
-  background: #FF99CC;
-  color: #FFF; }
-
-::-moz-selection {
-  background: #FF99CC;
-  color: #FFF; }
-
-::-webkit-selection {
-  background: #FF99CC;
-  color: #FFF; }
+::selection, ::-moz-selection, ::-webkit-selection {
+  background: #ff99cc;
+  color: white; }
 
 #topNav ul {
   padding: 0;
@@ -88,7 +80,15 @@ h2 {
 
 .navigation ul {
   list-style-type: none; }
-
+  .navigation ul li {
+    -webkit-transition: padding-left .2s ease 0s;
+    -moz-transition: padding-left .2s ease 0s;
+    -o-transition: padding-left .2s ease 0s;
+    -ms-transition: padding-left .2s ease 0s;
+    transition: padding-left .2s ease 0s; }
+  .navigation ul li:hover {
+    padding-left: 1em;
+    color: #ebcca2; }
 .navigation a {
   text-decoration: none;
   color: #b3c3c7;
@@ -122,24 +122,13 @@ h2 {
   overflow: hidden;
   width: 100%; }
 
-.navigation ul li {
-  -webkit-transition: padding-left .2s ease 0s;
-  -moz-transition: padding-left .2s ease 0s;
-  -o-transition: padding-left .2s ease 0s;
-  -ms-transition: padding-left .2s ease 0s;
-  transition: padding-left .2s ease 0s; }
-
-.navigation ul li:hover {
-  padding-left: 1em;
-  color: #ebcca2; }
-
 .inactiveNav {
   color: #b3c3c7;
   text-shadow: none; }
 
 .activeNav {
   color: #ebcca2;
-  text-shadow: 2px 2px 2px #555; }
+  text-shadow: 2px 2px 2px #555555; }
 
 /* Full Screen */
 @media all and (min-width: 650px) {
@@ -167,17 +156,14 @@ h2 {
     display: block;
     float: left;
     width: 15%; }
+    #rightNav ul {
+      padding-left: 0em; }
+      #rightNav ul a:first-child {
+        border-top: none; }
 
-  #rightNav ul {
-    padding-left: 0em; }
-
+  .navigation a {
+    border-top: 1px solid #999; }
   .navigation ul li {
     padding-left: .5em;
     padding-right: .75em;
-    background-color: #80697f; }
-
-  #rightNav ul a:first-child {
-    border-top: none; }
-
-  .navigation a {
-    border-top: 1px solid #999; } }
+    background-color: #80697f; } }
