@@ -1,5 +1,13 @@
 @import "normalize";
 
+@mixin transition($transition) {
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -o-transition: $transition;
+  -ms-transition: $transition;
+  transition: $transition;
+}
+
 $font-stack-headline: 'Oswald', helvetica, arial, sans-serif;
 $font-stack-text: 'Droid Serif', georgia, serif;
 $main-color: #80697F;
@@ -111,11 +119,7 @@ h2 {
     list-style-type: none;
 
     li {
-      -webkit-transition: padding-left .2s ease 0s;
-      -moz-transition: padding-left .2s ease 0s;
-      -o-transition: padding-left .2s ease 0s;
-      -ms-transition: padding-left .2s ease 0s;
-      transition: padding-left .2s ease 0s;
+      @include transition(padding-left .2s ease 0s);
     }
 
     li:hover {
@@ -129,10 +133,7 @@ h2 {
     color: $compliment-color-1;
     font-size: 1.4em;
     font-family: $font-stack-headline;
-    -webkit-transition: color .2s ease-in;
-    -moz-transition: color .2s ease-in;
-    -o-transition: color .2s ease-in;
-    transition: color .2s ease-in;
+    @include transition(color .2s ease-in);
     border-top: 1px solid gray;
     display: block;
     padding-right: 0em;

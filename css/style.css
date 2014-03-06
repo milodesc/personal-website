@@ -507,11 +507,11 @@ h2 {
 .navigation ul {
   list-style-type: none; }
   .navigation ul li {
-    -webkit-transition: padding-left .2s ease 0s;
-    -moz-transition: padding-left .2s ease 0s;
-    -o-transition: padding-left .2s ease 0s;
-    -ms-transition: padding-left .2s ease 0s;
-    transition: padding-left .2s ease 0s; }
+    -webkit-transition: padding-left 0.2s ease 0s;
+    -moz-transition: padding-left 0.2s ease 0s;
+    -o-transition: padding-left 0.2s ease 0s;
+    -ms-transition: padding-left 0.2s ease 0s;
+    transition: padding-left 0.2s ease 0s; }
   .navigation ul li:hover {
     padding-left: 1em;
     color: #ebcca2; }
@@ -520,10 +520,11 @@ h2 {
   color: #b3c3c7;
   font-size: 1.4em;
   font-family: "Oswald", helvetica, arial, sans-serif;
-  -webkit-transition: color .2s ease-in;
-  -moz-transition: color .2s ease-in;
-  -o-transition: color .2s ease-in;
-  transition: color .2s ease-in;
+  -webkit-transition: color 0.2s ease-in;
+  -moz-transition: color 0.2s ease-in;
+  -o-transition: color 0.2s ease-in;
+  -ms-transition: color 0.2s ease-in;
+  transition: color 0.2s ease-in;
   border-top: 1px solid gray;
   display: block;
   padding-right: 0em; }
