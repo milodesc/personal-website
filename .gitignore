@@ -1,4 +1,5 @@
 *~
+.sass-cache/*
 .gitignore
 .idea
 style_holder.css
