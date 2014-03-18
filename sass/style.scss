@@ -7,6 +7,7 @@ $icons-sprite-dimensions: true;
 $font-stack-headline: 'Oswald', helvetica, arial, sans-serif;
 $font-stack-text: 'Droid Serif', georgia, serif;
 $main-color: #80697F;
+$main-text-color: #444444;
 $compliment-color-1: #B3C3C7;
 $compliment-color-2: #EBCCA2;
 $shadow-color: #555;
@@ -15,6 +16,29 @@ $type-selection-color: #FFF;
 
 * {
   @include box-sizing("border-box");
+}
+
+.workPosition {
+  margin-bottom: 1.75em;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+
+.positionName {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.positionTimeFrame {
+  color: lighten($main-text-color, 20%);
+}
+
+.positionEmployer, .positionLocation {
+  font-family: $font-stack-headline;
+}
+
+.positionEmployer:after {
+  content: "  |  ";
 }
 
 [class^=icons-] {
@@ -103,7 +127,7 @@ div#main-text-box {
   background-color: rgba(255,255,255,0.85);
   font-family: $font-stack-text;
   line-height: 1.75em;
-  color: #444;
+  color: $main-text-color;
   border-radius: 1em;
 }
 

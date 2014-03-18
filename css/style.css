@@ -569,14 +569,42 @@ table {
   width: 50px;
 }
 
-/* line 16, ../sass/style.scss */
+/* line 17, ../sass/style.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 20, ../sass/style.scss */
+/* line 21, ../sass/style.scss */
+.workPosition {
+  margin-bottom: 1.75em;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+
+/* line 27, ../sass/style.scss */
+.positionName {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* line 32, ../sass/style.scss */
+.positionTimeFrame {
+  color: #777777;
+}
+
+/* line 36, ../sass/style.scss */
+.positionEmployer, .positionLocation {
+  font-family: "Oswald", helvetica, arial, sans-serif;
+}
+
+/* line 40, ../sass/style.scss */
+.positionEmployer:after {
+  content: "  |  ";
+}
+
+/* line 44, ../sass/style.scss */
 [class^=icons-] {
   margin-left: 15px;
   display: inline-block;
@@ -593,71 +621,71 @@ table {
   transition-duration: 0.3s;
 }
 
-/* line 29, ../sass/style.scss */
+/* line 53, ../sass/style.scss */
 [class^=icons-]:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
 
-/* line 33, ../sass/style.scss */
+/* line 57, ../sass/style.scss */
 [class^=icons-]:active {
   margin-top: 2px;
 }
 
-/* line 37, ../sass/style.scss */
+/* line 61, ../sass/style.scss */
 [class^=icons-]:first-child {
   margin-left: 0px;
 }
 
-/* line 41, ../sass/style.scss */
+/* line 65, ../sass/style.scss */
 #content-body {
   min-height: 85px;
 }
 
-/* line 45, ../sass/style.scss */
+/* line 69, ../sass/style.scss */
 a:focus {
   outline: 0;
 }
 
-/* line 49, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 #heading a {
   font-size: 1.137em;
   font-family: "Oswald", helvetica, arial, sans-serif;
   text-shadow: 2px 1px 1px #555555;
 }
 
-/* line 55, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 a {
   text-decoration: none;
   color: #b3c3c7;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 a:hover {
   text-decoration: none;
   color: #b3c3c7;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 89, ../sass/style.scss */
 span.alt-text {
   color: #ebcca2;
 }
 
-/* line 69, ../sass/style.scss */
+/* line 93, ../sass/style.scss */
 div#content-wrapper {
   max-width: 768px;
   width: 92%;
   margin: 0 auto;
 }
 
-/* line 75, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 div#content-mainbox {
   border-radius: 1em;
   padding: 1em;
   background-image: url("../images/bikegravel.jpg");
 }
 
-/* line 81, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 footer {
   margin: 10px auto;
   text-align: center;
@@ -668,17 +696,17 @@ footer {
   font-family: "Droid Serif", georgia, serif;
 }
 
-/* line 91, ../sass/style.scss */
+/* line 115, ../sass/style.scss */
 h1 {
   margin: 0px;
 }
 
-/* line 95, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 body {
   background-color: #80697f;
 }
 
-/* line 99, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 div#main-text-box {
   background-color: #dddddd;
   padding: 1em;
@@ -686,11 +714,11 @@ div#main-text-box {
   background-color: rgba(255, 255, 255, 0.85);
   font-family: "Droid Serif", georgia, serif;
   line-height: 1.75em;
-  color: #444;
+  color: #444444;
   border-radius: 1em;
 }
 
-/* line 110, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 h2 {
   color: #80697f;
   font-family: "Oswald", helvetica, arial, sans-serif;
@@ -699,28 +727,28 @@ h2 {
   text-shadow: 1px 1px 1px #999;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 ::selection, ::-moz-selection, ::-webkit-selection {
   background: #ff99cc;
   color: white;
 }
 
-/* line 123, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 #topNav ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 128, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 #rightNav {
   display: none;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 157, ../sass/style.scss */
 .navigation ul {
   list-style-type: none;
 }
-/* line 136, ../sass/style.scss */
+/* line 160, ../sass/style.scss */
 .navigation ul li {
   -webkit-transition: padding-left 0.2s ease;
   -webkit-transition-delay: 0s;
@@ -728,12 +756,12 @@ h2 {
   -o-transition: padding-left 0.2s ease 0s;
   transition: padding-left 0.2s ease 0s;
 }
-/* line 140, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .navigation ul li:hover {
   padding-left: 1em;
   color: #ebcca2;
 }
-/* line 146, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .navigation a {
   text-decoration: none;
   color: #b3c3c7;
@@ -748,7 +776,7 @@ h2 {
   padding-right: 0em;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 182, ../sass/style.scss */
 .menuButton {
   display: none;
   font-size: 1.6em;
@@ -762,25 +790,25 @@ h2 {
   text-shadow: 1px 1px 1px #b3c3c7;
 }
 
-/* line 171, ../sass/style.scss */
+/* line 195, ../sass/style.scss */
 .hideClass {
   height: 0px;
   opacity: 0;
 }
 
-/* line 176, ../sass/style.scss */
+/* line 200, ../sass/style.scss */
 .clear {
   overflow: hidden;
   width: 100%;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 205, ../sass/style.scss */
 .inactiveNav {
   color: #b3c3c7;
   text-shadow: none;
 }
 
-/* line 186, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .activeNav {
   color: #ebcca2;
   text-shadow: 2px 2px 2px #555555;
@@ -788,24 +816,24 @@ h2 {
 
 /* Full Screen */
 @media all and (min-width: 650px) {
-  /* line 194, ../sass/style.scss */
+  /* line 218, ../sass/style.scss */
   div#main-text-box {
     float: left;
     width: 100%;
   }
 
-  /* line 199, ../sass/style.scss */
+  /* line 223, ../sass/style.scss */
   .menuButton, #topNav {
     display: none;
   }
 
-  /* line 203, ../sass/style.scss */
+  /* line 227, ../sass/style.scss */
   #main-content {
     width: 85%;
     margin-right: .5em;
   }
 
-  /* line 208, ../sass/style.scss */
+  /* line 232, ../sass/style.scss */
   h2 {
     font-size: 4em;
     text-shadow: 2.5px 2.5px 2.75px #666;
@@ -813,31 +841,31 @@ h2 {
     margin-top: -.17em;
   }
 
-  /* line 215, ../sass/style.scss */
+  /* line 239, ../sass/style.scss */
   #heading a {
     font-size: 2em;
   }
 
-  /* line 219, ../sass/style.scss */
+  /* line 243, ../sass/style.scss */
   #rightNav {
     display: block;
     float: left;
     width: 15%;
   }
-  /* line 224, ../sass/style.scss */
+  /* line 248, ../sass/style.scss */
   #rightNav ul {
     padding-left: 0em;
   }
-  /* line 227, ../sass/style.scss */
+  /* line 251, ../sass/style.scss */
   #rightNav ul a:first-child {
     border-top: none;
   }
 
-  /* line 234, ../sass/style.scss */
+  /* line 258, ../sass/style.scss */
   .navigation a {
     border-top: 1px solid #999;
   }
-  /* line 238, ../sass/style.scss */
+  /* line 262, ../sass/style.scss */
   .navigation ul li {
     padding-left: .5em;
     padding-right: .75em;
