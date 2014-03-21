@@ -18,9 +18,8 @@ $type-selection-color: #FFF;
   @include box-sizing("border-box");
 }
 
-.workPosition {
-  margin-top: 1.75em;
-  font-size: .8em;
+h3 {
+  margin: 1.75em 0 0;
   line-height: 1.5em;
 }
 
