@@ -1,10 +1,17 @@
 <div><a href='files/Resume_JensenPatrick.pdf' target='new'>Resume</a> (PDF, 68 KB)</div>
 
 <div class='workPosition'>
-<div class='positionName'>Teaching Assistant: Comprehensive Planning Studio</div>
-<div class='positionTimeFrame'>September 2010 - December 2010</div>
-<div><span class='positionEmployer'>Rutgers University</span><span class='positionLocation'>New Brunswick, New Jersey</span></div>
-<div class='positionDescription'>Managed a team of 11 graduate students through a semester-long group project to recommend policies to Ocean City, NJ municipal officials that would spur hotel development in their municipality</div>
+    <div class='positionName'>Web Manager</div>
+    <div class='positionTimeFrame'>August 2011 - Current</div>
+    <div><span class='positionEmployer'>Transportation Alternatives</span><span class='positionLocation'>New York, New York</span></div>
+    <div class='positionDescription'>Implement senior management's vision for the organization's online presence using Drupal and Convio Lumninate Online.</div>
+</div>
+
+<div class='workPosition'>
+    <div class='positionName'>Teaching Assistant: Comprehensive Planning Studio</div>
+    <div class='positionTimeFrame'>September 2010 - December 2010</div>
+    <div><span class='positionEmployer'>Rutgers University</span><span class='positionLocation'>New Brunswick, New Jersey</span></div>
+    <div class='positionDescription'>Managed a team of 11 graduate students through a semester-long group project to recommend policies to Ocean City, NJ municipal officials that would spur hotel development in their municipality</div>
 </div>
 
 <div class='workPosition'>
