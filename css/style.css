@@ -138,7 +138,7 @@ h3 {
 }
 
 /* line 140, ../sass/_normalize.scss */
-h4 {
+h4, h5 {
   font-size: 1em;
   margin: 1.33em 0;
 }
@@ -578,32 +578,33 @@ table {
 
 /* line 21, ../sass/style.scss */
 h3 {
+  font-family: "Oswald", helvetica, arial, sans-serif;
   margin: 1.75em 0 0;
+  line-height: 1.5em;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+/* line 29, ../sass/style.scss */
+h4, h5 {
+  margin: 0px;
+  font-family: "Droid Serif", georgia, serif;
+  font-weight: normal;
+  font-size: .8em;
   line-height: 1.5em;
 }
 
-/* line 26, ../sass/style.scss */
-.positionName {
-  font-weight: bold;
-  font-size: 1rem;
+/* line 37, ../sass/style.scss */
+h5 {
+  color: #919191;
 }
 
-/* line 31, ../sass/style.scss */
-.positionTimeFrame {
-  color: #777777;
-}
-
-/* line 35, ../sass/style.scss */
-.positionEmployer, .positionLocation {
-  font-family: "Oswald", helvetica, arial, sans-serif;
-}
-
-/* line 39, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .positionEmployer:after {
   content: "  |  ";
 }
 
-/* line 43, ../sass/style.scss */
+/* line 46, ../sass/style.scss */
 [class^=icons-] {
   margin-left: 15px;
   display: inline-block;
@@ -620,71 +621,71 @@ h3 {
   transition-duration: 0.3s;
 }
 
-/* line 52, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 [class^=icons-]:hover {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
   opacity: 0.75;
 }
 
-/* line 56, ../sass/style.scss */
+/* line 59, ../sass/style.scss */
 [class^=icons-]:active {
   margin-top: 2px;
 }
 
-/* line 60, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 [class^=icons-]:first-child {
   margin-left: 0px;
 }
 
-/* line 64, ../sass/style.scss */
+/* line 67, ../sass/style.scss */
 #content-body {
   min-height: 85px;
 }
 
-/* line 68, ../sass/style.scss */
+/* line 71, ../sass/style.scss */
 a:focus {
   outline: 0;
 }
 
-/* line 72, ../sass/style.scss */
+/* line 75, ../sass/style.scss */
 #heading a {
   font-size: 1.137em;
   font-family: "Oswald", helvetica, arial, sans-serif;
   text-shadow: 2px 1px 1px #555555;
 }
 
-/* line 78, ../sass/style.scss */
+/* line 81, ../sass/style.scss */
 a {
   text-decoration: none;
   color: #b3c3c7;
 }
 
-/* line 83, ../sass/style.scss */
+/* line 86, ../sass/style.scss */
 a:hover {
   text-decoration: none;
   color: #b3c3c7;
 }
 
-/* line 88, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 span.alt-text {
   color: #ebcca2;
 }
 
-/* line 92, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 div#content-wrapper {
   max-width: 768px;
   width: 92%;
   margin: 0 auto;
 }
 
-/* line 98, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 div#content-mainbox {
   border-radius: 1em;
   padding: 1em;
   background-image: url("../images/bikegravel.jpg");
 }
 
-/* line 104, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 footer {
   margin: 10px auto;
   text-align: center;
@@ -695,17 +696,17 @@ footer {
   font-family: "Droid Serif", georgia, serif;
 }
 
-/* line 114, ../sass/style.scss */
+/* line 117, ../sass/style.scss */
 h1 {
   margin: 0px;
 }
 
-/* line 118, ../sass/style.scss */
+/* line 121, ../sass/style.scss */
 body {
   background-color: #80697f;
 }
 
-/* line 122, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 div#main-text-box {
   background-color: #dddddd;
   padding: 1em;
@@ -717,7 +718,7 @@ div#main-text-box {
   border-radius: 1em;
 }
 
-/* line 133, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 h2 {
   color: #80697f;
   font-family: "Oswald", helvetica, arial, sans-serif;
@@ -726,28 +727,28 @@ h2 {
   text-shadow: 1px 1px 1px #999;
 }
 
-/* line 141, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 ::selection, ::-moz-selection, ::-webkit-selection {
   background: #ff99cc;
   color: white;
 }
 
-/* line 146, ../sass/style.scss */
+/* line 149, ../sass/style.scss */
 #topNav ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 151, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 #rightNav {
   display: none;
 }
 
-/* line 156, ../sass/style.scss */
+/* line 159, ../sass/style.scss */
 .navigation ul {
   list-style-type: none;
 }
-/* line 159, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 .navigation ul li {
   -webkit-transition: padding-left 0.2s ease;
   -webkit-transition-delay: 0s;
@@ -755,12 +756,12 @@ h2 {
   -o-transition: padding-left 0.2s ease 0s;
   transition: padding-left 0.2s ease 0s;
 }
-/* line 163, ../sass/style.scss */
+/* line 166, ../sass/style.scss */
 .navigation ul li:hover {
   padding-left: 1em;
   color: #ebcca2;
 }
-/* line 169, ../sass/style.scss */
+/* line 172, ../sass/style.scss */
 .navigation a {
   text-decoration: none;
   color: #b3c3c7;
@@ -775,7 +776,7 @@ h2 {
   padding-right: 0em;
 }
 
-/* line 181, ../sass/style.scss */
+/* line 184, ../sass/style.scss */
 .menuButton {
   display: none;
   font-size: 1.6em;
@@ -789,25 +790,25 @@ h2 {
   text-shadow: 1px 1px 1px #b3c3c7;
 }
 
-/* line 194, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .hideClass {
   height: 0px;
   opacity: 0;
 }
 
-/* line 199, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .clear {
   overflow: hidden;
   width: 100%;
 }
 
-/* line 204, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .inactiveNav {
   color: #b3c3c7;
   text-shadow: none;
 }
 
-/* line 209, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .activeNav {
   color: #ebcca2;
   text-shadow: 2px 2px 2px #555555;
@@ -815,24 +816,24 @@ h2 {
 
 /* Full Screen */
 @media all and (min-width: 650px) {
-  /* line 217, ../sass/style.scss */
+  /* line 220, ../sass/style.scss */
   div#main-text-box {
     float: left;
     width: 100%;
   }
 
-  /* line 222, ../sass/style.scss */
+  /* line 225, ../sass/style.scss */
   .menuButton, #topNav {
     display: none;
   }
 
-  /* line 226, ../sass/style.scss */
+  /* line 229, ../sass/style.scss */
   #main-content {
     width: 85%;
     margin-right: .5em;
   }
 
-  /* line 231, ../sass/style.scss */
+  /* line 234, ../sass/style.scss */
   h2 {
     font-size: 4em;
     text-shadow: 2.5px 2.5px 2.75px #666;
@@ -840,31 +841,31 @@ h2 {
     margin-top: -.17em;
   }
 
-  /* line 238, ../sass/style.scss */
+  /* line 241, ../sass/style.scss */
   #heading a {
     font-size: 2em;
   }
 
-  /* line 242, ../sass/style.scss */
+  /* line 245, ../sass/style.scss */
   #rightNav {
     display: block;
     float: left;
     width: 15%;
   }
-  /* line 247, ../sass/style.scss */
+  /* line 250, ../sass/style.scss */
   #rightNav ul {
     padding-left: 0em;
   }
-  /* line 250, ../sass/style.scss */
+  /* line 253, ../sass/style.scss */
   #rightNav ul a:first-child {
     border-top: none;
   }
 
-  /* line 257, ../sass/style.scss */
+  /* line 260, ../sass/style.scss */
   .navigation a {
     border-top: 1px solid #999;
   }
-  /* line 261, ../sass/style.scss */
+  /* line 264, ../sass/style.scss */
   .navigation ul li {
     padding-left: .5em;
     padding-right: .75em;

@@ -19,21 +19,24 @@ $type-selection-color: #FFF;
 }
 
 h3 {
+  font-family: $font-stack-headline;
   margin: 1.75em 0 0;
+  line-height: 1.5em;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+h4 {
+  margin: 0px;
+  font-family: $font-stack-text;
+  font-weight: normal;
+  font-size: .8em;
   line-height: 1.5em;
 }
 
-.positionName {
-  font-weight: bold;
-  font-size: 1rem;
-}
-
-.positionTimeFrame {
-  color: lighten($main-text-color, 20%);
-}
-
-.positionEmployer, .positionLocation {
-  font-family: $font-stack-headline;
+h5 {
+  @extend h4;
+  color: lighten($main-text-color, 30%);
 }
 
 .positionEmployer:after {
