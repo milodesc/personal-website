@@ -26,7 +26,7 @@ h3 {
   font-weight: normal;
 }
 
-h4 {
+h4, .minorText {
   margin: 0px;
   font-family: $font-stack-text;
   font-weight: normal;
@@ -36,11 +36,29 @@ h4 {
 
 h5 {
   @extend h4;
-  color: lighten($main-text-color, 30%);
+  color: lighten($main-text-color, 25%);
 }
 
-.positionEmployer:after {
+p {
+  margin-top: 0;
+}
+
+.horizItems:after {
   content: "  |  ";
+}
+
+.horizItems:last-of-type:after {
+  content: "";
+}
+
+#main-text-box a {
+  color: $main-color;
+  font-weight: bold;
+}
+
+#main-text-box a:hover {
+  @include transition();
+  @include transition-duration(.3s);
 }
 
 [class^=icons-] {
@@ -52,7 +70,7 @@ h5 {
   @include transition-duration(.3s);
 }
 
-[class^=icons-]:hover {
+[class^=icons-]:hover, #main-content a:hover {
   @include opacity(.75);
 }
 
