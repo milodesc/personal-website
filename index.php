@@ -12,12 +12,6 @@
     <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700|Oswald:400,300,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
 
-    <!--[if lt IE 9]>
-      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
-
   </head>
 
   <body>
@@ -50,6 +44,11 @@
 
     <footer>Copyright 2011-<?php echo date (Y); ?></footer>
 
+    <!--[if lt IE 9]>
+    <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.10.0/jquery-ui.min.js"></script>
     <script>
       $(document).ready(function() {
 
