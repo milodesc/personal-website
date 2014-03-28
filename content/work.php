@@ -15,7 +15,7 @@
 </div>
 
 <div class='workPosition'>
-    <h3>Project Management Fellowship</h3>
+    <h3>Project Management Summer Fellowship</h3>
     <h4><span class='horizItems'>The Louis Berger Group</span><span class='horizItems'>Mauritius, Africa</span></h4>
     <h5>June 2010 - August 2010</h5>
     <div class='positionDescription'>Managed an international team of architects, engineers and builders on a project to construct an expansion to Mauritius, Africa's international airport.</div>

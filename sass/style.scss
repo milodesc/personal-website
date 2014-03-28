@@ -61,6 +61,11 @@ p {
   @include transition-duration(.3s);
 }
 
+#content-body > *:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
 [class^=icons-] {
   margin-left: 15px;
   display: inline-block;
@@ -110,13 +115,13 @@ span.alt-text {
   color: $compliment-color-2;
 }
 
-div#content-wrapper {
+#content-wrapper {
   max-width: 768px;
   width: 92%;
   margin: 0 auto;
 }
 
-div#content-mainbox {
+#content-mainbox {
   border-radius: 1em;
   padding: 1em;
   background-image: url("../images/bikegravel.jpg");
@@ -140,7 +145,7 @@ body {
   background-color: $main-color;
 }
 
-div#main-text-box {
+#main-text-box {
   background-color: #dddddd;
   padding: 1em;
   zoom: 1;
@@ -235,7 +240,7 @@ h2 {
 /* Full Screen */
 @media all and (min-width: 650px) {
 
-  div#main-text-box {
+  #main-text-box {
     float: left;
     width: 100%;
   }
