@@ -1,0 +1,25 @@
+{
+  "name": "dev.patrickcjensen.com",
+  "version": "0.0.0",
+  "description": "initial",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/milodesc/personal-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/milodesc/personal-website/issues"
+  },
+  "homepage": "http://patrickcjensen.com",
+  "devDependencies": {
+    "gulp": "^3.6.0",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^0.2.1",
+    "gulp-minify-css": "^0.3.0"
+  }
+}

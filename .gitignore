@@ -3,3 +3,4 @@
 .gitignore
 .idea
 style_holder.css
+node_modules/*
