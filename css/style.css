@@ -454,6 +454,8 @@ input[disabled] {
 /* line 440, ../sass/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   /* 1 */
   padding: 0;
@@ -630,12 +632,8 @@ p {
 /* line 59, ../sass/style.scss */
 #main-text-box a:hover {
   -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
@@ -654,12 +652,8 @@ p {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
   opacity: 1;
   -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
   transition: all 1s;
   -webkit-transition-duration: 0.3s;
-  -moz-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
 
@@ -770,6 +764,12 @@ h2 {
 }
 
 /* line 168, ../sass/style.scss */
+::-moz-selection, ::-moz-selection, ::-webkit-selection {
+  background: #ff99cc;
+  color: white;
+}
+
+/* line 168, ../sass/style.scss */
 ::selection, ::-moz-selection, ::-webkit-selection {
   background: #ff99cc;
   color: white;
@@ -792,10 +792,7 @@ h2 {
 }
 /* line 186, ../sass/style.scss */
 .navigation ul li {
-  -webkit-transition: padding-left 0.2s ease;
-  -webkit-transition-delay: 0s;
-  -moz-transition: padding-left 0.2s ease 0s;
-  -o-transition: padding-left 0.2s ease 0s;
+  -webkit-transition: padding-left 0.2s ease 0s;
   transition: padding-left 0.2s ease 0s;
 }
 /* line 190, ../sass/style.scss */
@@ -809,10 +806,8 @@ h2 {
   color: #b3c3c7;
   font-size: 1.4em;
   font-family: "Oswald", helvetica, arial, sans-serif;
-  -webkit-transition: color 0.2s ease-in;
-  -moz-transition: color 0.2s ease-in;
-  -o-transition: color 0.2s ease-in;
-  transition: color 0.2s ease-in;
+  -webkit-transition: color .2s ease-in;
+  transition: color .2s ease-in;
   border-top: 1px solid gray;
   display: block;
   padding-right: 0em;

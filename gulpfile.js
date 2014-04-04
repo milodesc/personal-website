@@ -2,6 +2,14 @@
 var gulp = require('gulp');
 var rename = require('gulp-rename');
 var minifyCSS = require('gulp-minify-css');
+var prefix = require('gulp-autoprefixer');
+
+// Prefix CSS
+gulp.task('prefix-css', function() {
+    gulp.src('./css/style.css')
+        .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
+        .pipe(gulp.dest('./css/'));
+});
 
 // Minify CSS
 gulp.task('minify-css', function() {
@@ -11,10 +19,5 @@ gulp.task('minify-css', function() {
         .pipe(gulp.dest('./css/'));
 });
 
-// Watch Files For Changes
-gulp.task('watch', function() {
-    gulp.watch('css/style.css', ['minify-css']);
-});
-
 // Default Task
-gulp.task('default', ['minify-css', 'watch']);
+gulp.task('default', ['prefix-css', 'minify-css']);
