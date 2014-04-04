@@ -20,6 +20,4 @@ gulp.task('watch', function() {
 });
 
 // Default Task
-gulp.task('default', null, function() {
-    gulp.start('watch');
-});
+gulp.task('default', ['styles', 'watch']);
