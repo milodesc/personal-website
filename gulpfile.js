@@ -15,4 +15,6 @@ gulp.task('styles', function() {
 });
 
 // Default Task
-gulp.task('default', ['styles']);
+gulp.task('default', null, function() {
+    gulp.start('styles');
+});
