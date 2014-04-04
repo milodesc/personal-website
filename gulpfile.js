@@ -14,7 +14,12 @@ gulp.task('styles', function() {
         .pipe(gulp.dest('./css/'));
 });
 
+// Watch
+gulp.task('watch', function() {
+    gulp.watch('css/style.css', ['styles']);
+});
+
 // Default Task
 gulp.task('default', null, function() {
-    gulp.start('styles');
+    gulp.start('watch');
 });
