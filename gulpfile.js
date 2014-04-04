@@ -7,7 +7,7 @@ var prefix = require('gulp-autoprefixer');
 // Prefix CSS
 gulp.task('prefix-css', function() {
     gulp.src('./css/style.css')
-        .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
+        .pipe(prefix("last 2 versions", "> 1%", "ie 8", "ie 7"))
         .pipe(gulp.dest('./css/'));
 });
 
