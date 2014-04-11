@@ -1,4 +1,4 @@
-<div><a href='files/Resume_JensenPatrick.pdf' target='new'>Resume</a> (PDF, 68 KB)</div>
+<div><a href='files/Resume_JensenPatrick.pdf' target='new'>Resume</a> (PDF)</div>
 
 <div class='workPosition'>
     <h3>Web Manager</h3>
