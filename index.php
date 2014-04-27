@@ -5,6 +5,8 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="I believe I can help shape places into something I am proud of while gaining the pride of the places I shape.">
+    <link rel="author" href="https://plus.google.com/113050464577653522302">
 
     <title>patrickcjensen.com</title>
 
